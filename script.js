@@ -3,6 +3,8 @@ let searchBar = document.querySelector('.search-bar-container');
 let formBtn = document.querySelector('#login-btn');
 let loginForm = document.querySelector('.login-form-container'); // Corrected the selector
 let formClose = document.querySelector('#form-close');
+let regBtn = document.querySelector('#reg-btn');
+let regForm = document.querySelector('.registration-form-container')
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
@@ -31,6 +33,12 @@ formBtn.addEventListener('click', () => {
 });
 
 formClose.addEventListener('click', () => {
+    loginForm.style.display="none";
+    regForm.style.display="none";
+});
+
+regBtn.addEventListener('click', () => {
+    regForm.style.display="block";
     loginForm.style.display="none";
 });
 
